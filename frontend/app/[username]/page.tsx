@@ -161,7 +161,7 @@ export default async function GitHubWrapped({
 
   if (!stats?.data) {
     return (
-      <div className="flex flex-col min-h-screen items-center justify-center p-8">
+      <div className="flex flex-col min-h-screen items-center justify-center p-4 sm:p-8">
         <h1 className="text-white text-center text-2xl md:text-3xl">
           No GitHub Wrapped found for
         </h1>
@@ -210,7 +210,7 @@ export default async function GitHubWrapped({
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 mt-4 md:mt-8">
           {/* Contribution Stats */}
-          <div className="bg-black/50 backdrop-blur-sm border border-white/[0.08] rounded-lg p-6">
+          <div className="bg-black/50 backdrop-blur-sm border border-white/[0.08] rounded-lg p-4 md:p-6">
             <h2 className="text-lg md:text-xl font-semibold mb-4">
               Contributions ({YEAR})
             </h2>
@@ -252,7 +252,7 @@ export default async function GitHubWrapped({
           </div>
 
           {/* Repository Stats */}
-          <div className="bg-black/50 backdrop-blur-sm border border-white/[0.08] rounded-lg p-6">
+          <div className="bg-black/50 backdrop-blur-sm border border-white/[0.08] rounded-lg p-4 md:p-6">
             <h2 className="text-lg md:text-xl font-semibold mb-4">
               Repository Impact
             </h2>
@@ -283,7 +283,7 @@ export default async function GitHubWrapped({
           </div>
 
           {/* Top Languages */}
-          <div className="bg-black/50 backdrop-blur-sm border border-white/[0.08] rounded-lg p-6">
+          <div className="bg-black/50 backdrop-blur-sm border border-white/[0.08] rounded-lg p-4 md:p-6">
             <h2 className="text-lg md:text-xl font-semibold mb-4">
               Top Languages
             </h2>
@@ -291,10 +291,10 @@ export default async function GitHubWrapped({
               {githubStats.languagesStats.slice(0, 5).map((lang) => (
                 <div key={lang.language} className="flex items-center gap-2">
                   <div
-                    className="w-3 h-3 rounded-full"
+                    className="w-3 h-3 rounded-full flex-shrink-0"
                     style={{ backgroundColor: lang.color || "#666" }}
                   />
-                  <span className="text-sm md:text-base text-muted-foreground">
+                  <span className="text-sm md:text-base text-muted-foreground min-w-0 truncate">
                     {lang.language}
                   </span>
                   <span className="text-xs md:text-sm ml-auto">

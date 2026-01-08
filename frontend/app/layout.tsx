@@ -88,7 +88,7 @@ export default function RootLayout({
           />
         )}
       </head>
-      <body className={`${geistMono.className} antialiased`}>
+      <body className={`${geistMono.className} antialiased overflow-x-hidden`}>
         <ToasterProvider>
           {children}
           <DonateButton />

@@ -5,7 +5,7 @@ import { YEAR } from "@/lib/constants";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-black text-white p-8 mt-8">
+    <div className="min-h-screen bg-black text-white p-4 sm:p-6 md:p-8 mt-4 md:mt-8">
       <div className="max-w-4xl mx-auto space-y-8">
         {/* Header */}
         <div className="space-y-4">
@@ -19,7 +19,7 @@ export default function AboutPage() {
         </div>
 
         {/* Main Content */}
-        <div className="space-y-8 bg-black/50 backdrop-blur-sm border border-white/[0.08] rounded-lg p-6 md:p-8">
+        <div className="space-y-8 bg-black/50 backdrop-blur-sm border border-white/[0.08] rounded-lg p-4 sm:p-6 md:p-8">
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl font-semibold">
               What is GitHub Wrapped?

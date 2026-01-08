@@ -1,5 +1,5 @@
 import { Data } from '@/types/stats';
-import { createOpenRouter } from '@openrouter/ai-sdk-provider';
+import { createOpenAI } from '@ai-sdk/openai';
 import { streamText } from 'ai';
 import { YEAR } from '@/lib/constants';
 
@@ -8,7 +8,8 @@ const AI_MODEL_ID = process.env.AI_MODEL_ID || 'mistralai/mistral-7b-instruct';
 const AI_TEMPERATURE = parseFloat(process.env.AI_TEMPERATURE || '0.9');
 const AI_MAX_TOKENS = parseInt(process.env.AI_MAX_TOKENS || '1200', 10);
 
-const openrouter = createOpenRouter({
+const openrouter = createOpenAI({
+  baseURL: 'https://openrouter.ai/api/v1',
   apiKey: process.env.OPENROUTER_API_KEY!,
 });
 
@@ -175,7 +176,7 @@ export async function POST(req: Request) {
   console.log("Using AI Model:", AI_MODEL_ID);
 
   const result = await streamText({
-    model: openrouter.chat(AI_MODEL_ID),
+    model: openrouter(AI_MODEL_ID),
     system: SYSTEM_PROMPT,
     prompt: getUserPrompt(request.username || 'Developer', JSON.stringify(request)),
     headers: {
@@ -183,7 +184,7 @@ export async function POST(req: Request) {
       'X-Title': `GitHub Wrapped ${YEAR} - Your Year in Code`,
     },
     temperature: AI_TEMPERATURE,
-    maxTokens: AI_MAX_TOKENS,
+    maxOutputTokens: AI_MAX_TOKENS,
   });
 
   // console.log("Results from AI:", text);

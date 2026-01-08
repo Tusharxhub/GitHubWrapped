@@ -16,15 +16,15 @@ export default function SocialShare({ username }: { username: string }) {
   }, [op, username]);
 
   return (
-    <div className="fixed bottom-8 left-8 flex gap-4 z-50">
+    <div className="fixed bottom-4 left-4 md:bottom-8 md:left-8 z-50 max-w-[calc(100vw-2rem)]">
       <button
         id="twitter-share-button"
         onClick={handleShare}
-        className="fixed left-8 bottom-8 bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold shadow-lg hover:bg-white/90 transition-all duration-300 z-50 flex items-center text-sm md:text-base"
+        className="bg-white text-black px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 rounded-full font-semibold shadow-lg hover:bg-white/90 transition-all duration-300 flex items-center text-xs sm:text-sm md:text-base"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2"
+          className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2"
           viewBox="0 0 24 24"
           fill="currentColor"
         >
