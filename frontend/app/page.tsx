@@ -82,7 +82,7 @@ export default function Home() {
   const handleShareOnX = useCallback(() => {
     op.track("share_on_x", { location: "home" });
     window.open(
-      `https://twitter.com/intent/tweet?text=Create your GitHub Wrapped for ${YEAR}!%20%23GitHubWrapped&url=https://githubwrapped.xyz`,
+      `https://twitter.com/intent/tweet?text=Create your GitHub Wrapped for ${YEAR}!%20%23GitHubWrapped&url=https://git-hub-wrapped-nine.vercel.app`,
       "_blank"
     );
   }, [op]);

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description: `Help keep GitHub Wrapped running! Your support makes a difference.`,
     images: [
       {
-        url: "https://githubwrapped.xyz/github-wrapped-og.png",
+        url: "https://git-hub-wrapped-nine.vercel.app/github-wrapped-og.png",
         width: 1200,
         height: 630,
       },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Support GitHub Wrapped ${YEAR}`,
     description: `Help keep GitHub Wrapped running! Your support makes a difference.`,
-    images: ["https://githubwrapped.xyz/github-wrapped-og.png"],
+    images: ["https://git-hub-wrapped-nine.vercel.app/github-wrapped-og.png"],
   },
 };
 

@@ -180,7 +180,7 @@ export async function POST(req: Request) {
     system: SYSTEM_PROMPT,
     prompt: getUserPrompt(request.username || 'Developer', JSON.stringify(request)),
     headers: {
-      'HTTP-Referer': 'https://githubwrapped.xyz',
+      'HTTP-Referer': 'https://git-hub-wrapped-nine.vercel.app',
       'X-Title': `GitHub Wrapped ${YEAR} - Your Year in Code`,
     },
     temperature: AI_TEMPERATURE,

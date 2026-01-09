@@ -44,7 +44,7 @@ export async function generateMetadata({
 
   if (!stats?.data) {
     return {
-      metadataBase: new URL("https://githubwrapped.xyz"),
+      metadataBase: new URL("https://git-hub-wrapped-nine.vercel.app"),
       title: "User Not Found",
       description: "This GitHub profile could not be found.",
     };
@@ -53,7 +53,7 @@ export async function generateMetadata({
   const { user } = stats.data;
 
   return {
-    metadataBase: new URL("https://githubwrapped.xyz"),
+    metadataBase: new URL("https://git-hub-wrapped-nine.vercel.app"),
     title: `${user.name || username}'s GitHub Wrapped ${YEAR}`,
     description: `Check out ${
       user.name || username
