@@ -49,7 +49,7 @@ export default function SaveImageButton() {
 
     // Add watermark
     const watermark = document.createElement("p");
-    watermark.textContent = "Generated using GitHubWrapped.xyz";
+    watermark.textContent = "Generated using GitHubWrapped";
     watermark.className =
       "text-white p-8 text-xl font-bold text-center font-mono";
     document.body.appendChild(watermark);
