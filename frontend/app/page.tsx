@@ -129,7 +129,7 @@ export default function Home() {
           )}
         </div>
         <div className="mt-4 flex justify-center">
-          <Link
+          {/* <Link
             href="https://www.producthunt.com/products/github-wrapped-2024-your-year-in-code?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-github-wrapped-2025"
             target="_blank"
           >
@@ -145,7 +145,7 @@ export default function Home() {
               width="250"
               height="54"
             />
-          </Link>
+          </Link> */}
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
           <button
