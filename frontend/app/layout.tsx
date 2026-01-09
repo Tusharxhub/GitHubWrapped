@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://git-hub-wrapped-nine.vercel.app"),
+  metadataBase: new URL("https://githubwrapped01.vercel.app/"),
   title: {
     default: `GitHub Wrapped ${YEAR}`,
     template: "%s | GitHub Wrapped",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: `GitHub Wrapped ${YEAR}`,
     images: [
       {
-        url: "https://git-hub-wrapped-nine.vercel.app/github-wrapped-og.png",
+        url: "https://githubwrapped01.vercel.app//github-wrapped-og.png",
         width: 1200,
         height: 630,
       },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     site: "@tushardevx01",
     images: [
       {
-        url: "https://git-hub-wrapped-nine.vercel.app/github-wrapped-og.png",
+        url: "https://githubwrapped01.vercel.app//github-wrapped-og.png",
         width: 1200,
         height: 630,
       },

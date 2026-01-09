@@ -10,7 +10,7 @@ export default function SocialShare({ username }: { username: string }) {
   const handleShare = useCallback(() => {
     op.track("share_on_x", { location: "wrapped_page", username });
     window.open(
-      `https://x.com/intent/tweet?text=Check out my GitHub Wrapped for ${YEAR}! %23GitHubWrapped&url=https://git-hub-wrapped-nine.vercel.app/${username}`,
+      `https://x.com/intent/tweet?text=Check out my GitHub Wrapped for ${YEAR}! %23GitHubWrapped&url=https://githubwrapped01.vercel.app//${username}`,
       "_blank"
     );
   }, [op, username]);

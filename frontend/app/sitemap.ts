@@ -8,7 +8,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const allUsersResponse = await getAllUsers();
     const allUsers = allUsersResponse.data || [];
     const baseUrl =
-      process.env.NEXT_PUBLIC_APP_URL || "https://git-hub-wrapped-nine.vercel.app";
+      process.env.NEXT_PUBLIC_APP_URL || "https://githubwrapped01.vercel.app/";
 
     const staticRoutes: MetadataRoute.Sitemap = [
       {
@@ -45,7 +45,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error("Error generating sitemap:", error);
     return [
       {
-        url: process.env.NEXT_PUBLIC_APP_URL || "https://git-hub-wrapped-nine.vercel.app",
+        url: process.env.NEXT_PUBLIC_APP_URL || "https://githubwrapped01.vercel.app/",
         lastModified: new Date(),
         changeFrequency: "daily",
         priority: 1,
