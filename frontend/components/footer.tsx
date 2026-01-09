@@ -6,15 +6,15 @@ export default function Footer() {
       <p className="text-sm md:text-base text-white/80">
         Created by{" "}
         <Link
-          href="https://x.com/mtwn105"
+          href="https://x.com/tushardevx01"
           className="text-white hover:underline"
           data-track="footer_twitter_profile_click"
         >
-          Amit Wani
+          Tushar kanti Dey
         </Link>{" "}
         (
         <Link
-          href="https://x.com/mtwn105"
+          href="https://x.com/tushardevx01"
           className="text-white hover:underline"
           data-track="footer_twitter_click"
         >
@@ -22,7 +22,7 @@ export default function Footer() {
         </Link>
         {" / "}
         <Link
-          href="https://github.com/mtwn105"
+          href="https://github.com/Tusharxhub"
           className="text-white hover:underline"
           data-track="footer_github_click"
         >

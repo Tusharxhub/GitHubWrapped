@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     "wrapped",
     YEAR,
   ],
-  authors: [{ name: "Amit Wani" }],
-  creator: "Amit Wani",
+  authors: [{ name: "Tushar kanti Dey" }],
+  creator: "Tushar kanti Dey",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@mtwn105",
-    site: "@mtwn105",
+    creator: "@tushardevx01",
+    site: "@tushardevx01",
     images: [
       {
         url: "https://githubwrapped.xyz/github-wrapped-og.png",

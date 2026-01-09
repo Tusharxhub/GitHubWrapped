@@ -6,13 +6,12 @@ spring:
     name: GitHub-Wrapped
   data:
     mongodb:
-      uri: mongodb://localhost:27017/githubwrapped
-
+      uri: ${MONGODB_URI}
 auth:
-  token: AUTH_TOKEN
+  token: ${GH_TOKEN}
 
 github:
   graphql:
     url: https://api.github.com/graphql
   username: GITHUB_USERNAME
-  token: GITHUB_TOKEN
+  token: ${GH_TOKEN}
