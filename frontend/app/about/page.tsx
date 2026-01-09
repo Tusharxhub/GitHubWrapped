@@ -51,7 +51,7 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="https://github.com/mtwn105/GithubWrapped"
+                href="https://github.com/Tusharxhub/GithubWrapped"
                 target="_blank"
               >
                 <Button className="w-full sm:w-auto bg-white text-black hover:bg-white/90">
