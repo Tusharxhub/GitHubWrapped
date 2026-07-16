@@ -22,7 +22,7 @@ export default function Footer() {
         </Link>
         {" / "}
         <Link
-          href="https://github.com/Tusharxhub"
+          href="https://github.com/Tushardevx01"
           className="text-white hover:underline"
           data-track="footer_github_click"
         >
