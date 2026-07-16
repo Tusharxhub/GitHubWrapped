@@ -76,7 +76,7 @@ export default function Home() {
 
   const handleGitHubClick = useCallback(() => {
     op.track("github_star_click", { location: "home" });
-    window.open("https://github.com/Tusharxhub/GitHubWrapped", "_blank");
+    window.open("https://github.com/Tushardevx01/GitHubWrapped", "_blank");
   }, [op]);
 
   const handleShareOnX = useCallback(() => {
