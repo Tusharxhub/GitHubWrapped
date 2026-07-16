@@ -1,148 +1,236 @@
+<div align="center">
 
-# 📊 GitHubWrapped – Your GitHub Year in Review
+# 📊 GitHubWrapped
 
-**GitHubWrapped** is a **interactive year-in-review dashboard** that visualizes your GitHub activity.  
-It helps you explore and share your coding journey with insights like contributions, top repositories, languages used, and activity patterns.
+### Your GitHub Year in Review
 
----
+GitHubWrapped is an interactive dashboard that transforms your GitHub activity into a beautiful, shareable year-in-review experience. Explore your coding journey through contribution insights, repository statistics, language usage, and personalized developer analytics.
 
-## 🌐 Demo Link 🌟
+<p>
+  <a href="https://githubwrapped01.vercel.app">
+    <strong>🌐 Live Demo</strong>
+  </a>
+</p>
 
-Access the live version of **GitHubWrapped** here:  
-👉 https://githubwrapped01.vercel.app
-
----
-
-## 🛠️ Tech Stack – What Powers GitHubWrapped ⚙️
-
-| Technology           | Purpose                                        |
-|---------------------|------------------------------------------------|
-| ⚡ **Next.js**        | Frontend framework for UI and routing          |
-| 🟦 **TypeScript**    | Type-safe code for reliability and scalability |
-| 🎨 **Tailwind CSS**  | Utility-first styling                          |
-| 🔁 **GitHub API**    | Source of contribution and repo data           |
-| 🧠 **Backend API**   | Handles data processing and aggregation        |
-| 📊 **Chart Libraries** | Visual graphs for stats                       |
+</div>
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-**GitHubWrapped** gives you insights like:
-
-- 📈 **Contribution timeline** for the year  
-- ⭐ **Top repositories** based on activity  
-- 💻 **Most used languages** and stats  
-- 👩‍💻 **Active days and code patterns**  
-- 🏆 **Shareable year-in-review UI**  
-- 📊 Beautiful charts and responsive design
-
-This mirrors popular year-in-review tools but tailored for developers. :contentReference[oaicite:3]{index=3}
+- 📈 Annual contribution timeline
+- ⭐ Most active repositories
+- 💻 Programming language statistics
+- 📅 Commit streak and activity insights
+- 📊 Interactive charts and visualizations
+- 🎨 Beautiful and responsive interface
+- 🚀 Fast performance with Next.js
+- 📱 Mobile-friendly design
+- 🔗 GitHub API integration
+- 🎉 Shareable developer year-in-review
 
 ---
 
-## 📁 Project Structure
+## 🛠️ Tech Stack
 
-```bash
+| Technology | Purpose |
+|------------|---------|
+| Next.js | React Framework |
+| React | User Interface |
+| TypeScript | Type-safe Development |
+| Tailwind CSS | Styling |
+| GitHub REST API | GitHub Data |
+| Chart.js / Recharts | Data Visualization |
+| Node.js | Backend Runtime |
+| Vercel | Deployment |
+
+---
+
+## 📂 Project Structure
+
+```text
 GitHubWrapped/
-├── frontend/              # React/Next.js frontend app
-├── backend/               # API server and logic
-├── .gitignore
-├── README.md
-└── package.json
-````
+├── frontend/
+│   ├── app/
+│   ├── components/
+│   ├── hooks/
+│   └── styles/
+├── backend/
+│   ├── api/
+│   ├── services/
+│   └── utils/
+├── public/
+├── package.json
+└── README.md
+```
 
 ---
 
-## 🧠 Getting Started – Run Locally
+# 🚀 Getting Started
 
-### ✅ Prerequisites
+## Prerequisites
 
-Make sure you have:
+Before running the project, make sure you have:
 
-* Node.js installed
-* A GitHub API token (for full stats)
+- Node.js 18+
+- npm
+- GitHub Personal Access Token (optional for higher API limits)
 
-### 🔧 Setup
+---
+
+## Clone the Repository
 
 ```bash
-# Clone the project
-git clone https://github.com/Tusharxhub/GitHubWrapped.git
+git clone https://github.com/tushardevx01/GitHubWrapped.git
+```
+
+---
+
+## Navigate to the Project
+
+```bash
 cd GitHubWrapped
+```
 
-# Install dependencies
+---
+
+## Install Dependencies
+
+```bash
 npm install
+```
 
-# Start the app
+---
+
+## Configure Environment Variables
+
+Create a `.env.local` file.
+
+```env
+GITHUB_TOKEN=your_github_personal_access_token
+```
+
+---
+
+## Start the Development Server
+
+```bash
 npm run dev
 ```
 
-Then open `http://localhost:3000` in your browser.
+Open **http://localhost:3000** in your browser.
 
 ---
 
-## 🖥️ Example Screens
+## 🌐 Live Demo
 
-### 📊 Contribution Timeline
-
-Shows your commit activity over the year, peak days, and streaks.
-
-### 🌐 Language Stats
-
-Breakdown of languages you used most in the year.
-
-### ⭐ Top Repositories
-
-Highlights your most active or important projects.
-
-(Replace these sections with screenshots once available.)
+🔗 **https://githubwrapped01.vercel.app**
 
 ---
 
-## 🔐 GitHub API Access
+## 📊 Dashboard Highlights
 
-To unlock private contributions or more detailed stats:
+GitHubWrapped provides detailed insights including:
 
-1. Create a GitHub personal access token
-2. Add it to your environment variables
+### 📈 Contribution Timeline
 
-   ```bash
-   export GITHUB_TOKEN="your_token_here"
-   ```
-3. Restart the app to fetch authorized data.
+Visualize your yearly coding activity, contribution streaks, and productivity trends.
+
+### ⭐ Repository Analytics
+
+Discover your most active repositories based on commits and overall development activity.
+
+### 💻 Language Statistics
+
+See which programming languages you used the most throughout the year.
+
+### 📅 Coding Patterns
+
+Analyze:
+
+- Most active coding days
+- Weekly activity
+- Commit frequency
+- Development consistency
+
+### 🎉 Shareable Summary
+
+Generate a beautiful developer summary perfect for sharing on social media.
+
+---
+
+## 🔐 GitHub API Authentication
+
+To access higher API rate limits and additional statistics:
+
+1. Create a GitHub Personal Access Token.
+2. Add it to your environment variables.
+
+```env
+GITHUB_TOKEN=your_token_here
+```
+
+3. Restart the application.
+
+---
+
+## 💡 Future Improvements
+
+- [ ] GitHub achievements
+- [ ] Developer personality summary
+- [ ] AI-powered coding insights
+- [ ] Monthly wrapped reports
+- [ ] Dark and light themes
+- [ ] PDF export
+- [ ] Social media image generation
+- [ ] Repository comparison
+- [ ] Organization statistics
+- [ ] Multi-year analytics
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are always welcome:
+Contributions are welcome.
 
-1. Fork this repository
-2. Create a feature branch (`git checkout -b feature/xyz`)
-3. Commit your changes (`git commit -m "Add feature xyz"`)
-4. Push to your branch
-5. Open a pull request
+1. Fork the repository.
 
-Let’s build useful tools for the developer community.
+2. Create a feature branch.
+
+```bash
+git checkout -b feature/amazing-feature
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add amazing feature"
+```
+
+4. Push your branch.
+
+```bash
+git push origin feature/amazing-feature
+```
+
+5. Open a Pull Request.
 
 ---
 
-## 📬 Contact
+## 📬 Connect With Me
 
-For suggestions, questions, or collaborations:
-
-* 📧 Email: [t.k.d.dey2033929837@gmail.com](mailto:t.k.d.dey2033929837@gmail.com)
-* 🔗 GitHub: [https://github.com/Tusharxhub](https://github.com/Tusharxhub)
-* 📸 Instagram: [https://www.instagram.com/tushardevx01/](https://www.instagram.com/tushardevx01/)
+- **GitHub:** https://github.com/tushardevx01
+- **Portfolio:** https://tushardevx01.tech
+- **LinkedIn:** https://www.linkedin.com/in/tushardevx01
+- **Instagram:** https://www.instagram.com/tushardevx01/
+- **Email:** t.k.d.dey2033929837@gmail.com
 
 ---
 
-## ⭐ Final Note
+<div align="center">
 
-This project is designed to help developers reflect on their year of coding, celebrate productivity, and share their journey with friends or on social media.
+Made with ❤️ by **Tushar Kanti Dey**
 
-If you find it useful, give it a ⭐ on GitHub!
+⭐ If you found GitHubWrapped useful, consider giving it a star.
 
-
-
-[1]: https://github.com/mtwn105/GitHubWrapped?utm_source=chatgpt.com "mtwn105/GitHubWrapped: GitHub Wrapped - Your Year in ..."
+</div>
